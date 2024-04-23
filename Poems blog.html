@@ -1,0 +1,106 @@
+ <!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?cs=srgb&dl=pexels-pixabay-206359.jpg&fm=jpg.jpg');
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+        img-size: 0px 0px 0px 0px;
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+        background: url('https://www.teahub.io/photos/full/74-740321_backgrounds-of-beautiful-scenery-in-widescreen-beautiful-scenery.jpg');
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+      color :gold;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx1A3M4OVzlmAcgbS6uF6E2ITaqcw0VpkotQ&usqp=CAU.png">
+    <h1>Moksha's Blog</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Best Poems</a></li>
+      <li><a href="#">Worst Poems</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Upon the Hour Glass
+                        -by John Bunyan</h2>
+    <p>This glass, when made, was, by the workman's skill,
+        The sum of sixty minutes to fulfil.
+        Time, more nor less, by it will out be spun,
+        But just an hour, and then the glass is run.
+        Man's life we will compare unto this glass,
+The number of his months he cannot pass;
+But when he has accomplished his day,
+He, like a vapour, vanisheth away.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Clod of the Earth
+-by Anna Hempstead Branch</h2>
+    <p>Clod of the earth, that hardly knows
+How the warm sun comes or the cold rain goes,
+That lieth dumb and bleak and bare,
+It was thy thought begat the rose.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>The Dreamer
+-by Madison Cawein</h2>
+    <p>Even as a child he loved to thrid the bowers,
+And mark the loafing sunlight's lazy laugh;
+Or, on each season, spell the epitaph
+Of its dead months repeated in their flowers;
+Or list the music of the strolling showers,
+Whose vagabond notes strummed through a twinkling staff,
+Or read the day's delivered monograph
+Through all the chapters of its dædal hours.
+Still with the same child-faith and child regard
+He looks on Nature, hearing at her heart,
+The Beautiful beat out the time and place,
+Through which no lesson of this life is hard,
+No struggle vain of science or of art,
+That dies with failure written on its face.</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>

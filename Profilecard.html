@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add Font Awesome CSS link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-vno1JiCpWqFOcctAttyR3AVZS7WmLdM3O9tI8tGkDUN9kq9GSe2xjsoMb7a9Gg3i" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: linear-gradient(to bottom, #3498db 40%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.7) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .profile-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            text-align: center;
+        }
+        .profile-card img {
+            height: 130px;
+            width: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 20px 10px -10px rgb(37 41 52 / 31%);
+            margin-bottom: 15px;
+            margin-left: auto; 
+            margin-right: auto; 
+            display: block;
+            object-position: top;
+        }
+        h2 {
+            text-align: center;
+        }
+        h3 {
+            font-size: 15px;
+            color: #3498db;
+        }
+        .info-social {
+            flex-grow: 1;
+            padding: 15px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: space-around;
+        }
+        .sm {
+            flex-basis: 40px;
+            height: 40px;
+            transition: all .3s ease-in-out;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            text-align: center;
+            background-size: 100% 200%;
+            background-position-y: 10%;
+            font-size: 2em;
+            color: black;
+            cursor: pointer;
+            &:hover {
+                background-position-y: 100%;
+            }
+        }
+        .sm.twitter {
+            background-image: linear-gradient(transparent 50%, dodgerblue 50%);
+        }
+        .sm.github {
+            background-image: linear-gradient(transparent 50%, rgb(149, 106, 149) 50%);
+        }
+        .sm.instagram {
+            background-image: linear-gradient(transparent 50%, #833ab4 50%);
+
+        }
+        .sm.linkedin {
+            background-image: linear-gradient(transparent 50%, royalblue  50%);
+        }
+        .sm img{
+        height: 25px;
+	    width :25px;
+        border-radius:0% ;
+        margin-bottom: 0;
+        }
+    </style>
+    <title>Profile card</title>
+</head>
+<body>
+    <div class="profile-card">
+        <img src="C:\Users\kmoks\OneDrive\Desktop\MY PORTFOLIO WEBSITE\assets\images\_8222e35c-8a3d-4fbe-9cf3-662c22f145c2.jpeg" alt="Profile Image" class="profile_image">
+        <h2>Moksha Sai</h2>
+        <h3>Student at Gitam University</h3>
+        <div class="info-social">
+            <div class="social-icons">
+                <div class="sm twitter">
+                    <img src="C:\Users\kmoks\Downloads\twitter-svgrepo-com.svg">
+                </div>
+                <div class="sm github">
+                    <img src="C:\Users\kmoks\Downloads\github-142-svgrepo-com.svg">
+                </div>
+                <div class="sm instagram">
+                    <img src="C:\Users\kmoks\Downloads\instagram-167-svgrepo-com.svg">
+                </div>
+                <div class="sm linkedin">
+                    <img src="C:\Users\kmoks\Downloads\linkedin-svgrepo-com.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
